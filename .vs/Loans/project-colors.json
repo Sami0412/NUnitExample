@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0d3bf21b-51f5-4a43-ac06-66f5031ba5a1": {
+      "ProjectGuid": "0d3bf21b-51f5-4a43-ac06-66f5031ba5a1",
+      "DisplayName": "Loans",
+      "ColorIndex": 0
+    },
+    "75d8165f-2593-4e39-a51b-e8d7cfb2a128": {
+      "ProjectGuid": "75d8165f-2593-4e39-a51b-e8d7cfb2a128",
+      "DisplayName": "Loans.Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
