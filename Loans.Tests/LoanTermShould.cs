@@ -15,8 +15,8 @@ namespace Loans.Tests
             var sut = new LoanTerm(1);
 
             var numberOfMonths = sut.ToMonths();
-
-            Assert.That(numberOfMonths, new EqualConstraint(12));
+            //third param of That() takes customer error message string
+            Assert.That(numberOfMonths, Is.EqualTo(12), "Months should be 12 * number of years");
         }
 
         [Test]
@@ -64,6 +64,15 @@ namespace Loans.Tests
             
             Assert.That(y, Is.SameAs(x));
             Assert.That(z, Is.Not.SameAs(x)); //SameAs() constraint is only concerned with comparing references, not values
+        }
+
+        [Test]
+        public void Double()
+        {
+            double a = 1.0 / 3.0;
+            
+            Assert.That(a, Is.EqualTo(0.33).Within(0.004));
+            Assert.That(a, Is.EqualTo(0.33).Within(10).Percent);
         }
     }
 }
