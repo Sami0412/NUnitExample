@@ -6,6 +6,9 @@ using NUnit.Framework.Constraints;
 namespace Loans.Tests
 {
     [TestFixture]
+    //With NUnit 3 you don't need this TestFixture attribute!
+    //[Ignore("Need to complete update work")]
+    //Can use Ignore attribute at fixture level or test level
     public class LoanTermShould
     {
         [Test]
