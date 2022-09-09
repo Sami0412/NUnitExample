@@ -49,4 +49,15 @@ public class LoanRepaymentCalculatorShould
 
         return sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
     }
+    
+    [Test]
+    [TestCaseSource(typeof(MonthlyRepaymentCsvData), nameof(MonthlyRepaymentCsvData.GetTestCases), new object[]{ "Data.csv" })]
+    public void CalculateCorrectMonthlyRepayment_Csv(decimal principal, decimal interestRate, int termInYears, decimal expectedMonthlyPayment)
+    {
+        var sut = new LoanRepaymentCalculator();
+
+        var monthlyPayment = sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
+        
+        Assert.That(monthlyPayment, Is.EqualTo(expectedMonthlyPayment));
+    }
 }

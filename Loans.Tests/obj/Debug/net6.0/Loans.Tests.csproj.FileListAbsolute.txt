@@ -99,3 +99,4 @@ C:\Users\samantha.williams\Downloads\nunit-3-dotnet-testing-introduction\02\demo
 C:\Users\samantha.williams\Downloads\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\obj\Debug\net6.0\ref\Loans.Tests.dll
 C:\Users\samantha.williams\Downloads\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\obj\Debug\net6.0\Loans.Tests.pdb
 C:\Users\samantha.williams\Downloads\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\obj\Debug\net6.0\Loans.Tests.genruntimeconfig.cache
+C:\Users\samantha.williams\Downloads\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\bin\Debug\net6.0\Data.csv
